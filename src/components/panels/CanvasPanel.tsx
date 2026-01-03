@@ -60,16 +60,16 @@ export function CanvasPanel(props: {
           <Tag color="red">Target</Tag>
         </Space>
       }
-      style={{ borderRadius: 12}}
+      style={{ borderRadius: 12 }}
       bodyStyle={{ padding: 10 }}
     >
-      <div ref={ref} style={{ width: "100%", height: "60vh", minHeight: 380}}>
+      <div ref={ref} style={{ width: "100%", height: "60vh", minHeight: 380 }}>
         <Board2D
           state={state}
           width={box.w}
           height={box.h}
           phase={phase}
-          overlayText={""} 
+          overlayText={""}
           zoom={zoom}
           onZoomChange={onZoom}
           stagePos={stagePos}
@@ -83,20 +83,22 @@ export function CanvasPanel(props: {
       {overlayEnabled && (
         <>
           <Divider style={{ margin: "10px 0" }} />
-        <div
-  style={{
-    padding: 10,
-    border: "1px solid #f0f0f0",
-    borderRadius: 10,
-    background: "#fafafa",
-    maxHeight: 160,
+          <div
+            style={{
+              padding: 10,
+              border: "1px solid #f0f0f0",
+              borderRadius: 10,
+              background: "#fafafa",
+              maxHeight: 160,
 
-    overflowY: "auto",   
-    overflowX: "hidden",
-  }}
->
-
-            <Text type="secondary" style={{ display: "block", marginBottom: 6 }}>
+              overflowY: "auto",
+              overflowX: "hidden",
+            }}
+          >
+            <Text
+              type="secondary"
+              style={{ display: "block", marginBottom: 6 }}
+            >
               Overlay
             </Text>
             <pre
